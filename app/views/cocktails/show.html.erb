@@ -1,2 +1,18 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="banner">
+<h2><%= @cocktail.name %></h2>
+</div>
+<div class="container main">
+  <div class="row">
+
+<ol>
+  <% @cocktail.doses.each do |x| %>
+    <li><%= x.ingredient.name %>: <strong><%= x.description %></strong></li>
+  <% end %>
+</ol>
+<hr> 
+<%= link_to 'Add Dose',  new_cocktail_dose_path(@cocktail) %> 
+        </div>
+      </div>
+
+
+

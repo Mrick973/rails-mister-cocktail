@@ -2,15 +2,16 @@ class CocktailsController < ApplicationController
  before_action :set_cocktail, only: [:show]
 
 	def index
-	 @cocktails = Cocktail.all
+	 @cocktails = Cocktail.first(3)
 	end	
 
   def show
-   @cocktail
+   # @doses = @cocktail.dose
   end
 
   def new
   	@cocktail = Cocktail.new
+    @cocktail.doses << Dose.new
   end
 
   def create

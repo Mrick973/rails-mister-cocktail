@@ -1,0 +1,22 @@
+// Specific CSS for your home-page
+.jumbotron{
+  h1{
+color: white;
+  }
+
+//   color: white;
+  text-align: center;
+  height: 100vh;
+//   /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+ // display: flex;
+//   // align-items: center;
+//   justify-content: center;
+  background-image: url(backgroundJum1.jpeg);
+//   h1{
+//         padding-top: 20px;
+//         margin-right: 150px;
+
+//   }
+
+}
